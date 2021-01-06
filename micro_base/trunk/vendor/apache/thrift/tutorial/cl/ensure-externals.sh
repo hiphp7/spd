@@ -1,0 +1,1 @@
+link ../../lib/cl/ensure-externals.sh

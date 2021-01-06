@@ -1,0 +1,25 @@
+{
+  "name": "ligu-ligu/micro-sms",
+  "description": "The Ligu-Ligu Sms Service.",
+  "license": "Private",
+  "type": "library",
+  "authors": [
+    {
+      "name": "wangjh",
+      "email": "9299381@q.com"
+    }
+  ],
+  "require": {
+  },
+  "autoload": {
+    "psr-4": {
+      "Micro\\User\\": "src"
+    },
+    "files": [
+      "src/helpers.php"
+    ]
+  },
+  "autoload-dev": {
+
+  }
+}

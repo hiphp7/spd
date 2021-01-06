@@ -1,0 +1,21 @@
+version: "3"
+services:
+  one:
+    build:
+      context: ./php-fpm
+    volumes:
+      - ./php-fpm/php7.3.ini:/usr/local/etc/php/php.ini
+      # - ../app/one:/var/www
+      - ../:/var/www
+    ports:
+      - 9001:1215
+    command: php artisan swoole:http start
+#  two:
+#    build:
+#      context: ./php-fpm
+#    volumes:
+#      - ./php-fpm/php7.3.ini:/usr/local/etc/php/php.ini
+#      - ../:/var/www
+#      # - ../app/two:/var/www
+#    ports:
+#      - 9002:9000
